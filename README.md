@@ -1,5 +1,21 @@
 # PwnDoc
 
+Better install instructions:
+sudo apt-get install docker
+sudo apt-get install docker.io
+sudo git clone https://github.com/pwndoc/pwndoc.git
+sudo systemctl start docker
+sudo systemctl status docker
+sudo wget https://github.com/docker/compose/releases/download/v2.3.3/docker-compose-linux-x86_64
+sudo mv docker-compose-linux-x86_64 docker-compose
+sudo chmod +x docker-compose
+sudo mv docker-compose /usr/bin/.
+cd pwndoc
+sudo docker-compose up -d --build
+sudo docker-compose start
+https://localhost:8443
+
+
 PwnDoc is a pentest reporting application making it simple and easy to write your findings and generate a customizable Docx report.  
 The main goal is to have more time to **Pwn** and less time to **Doc** by mutualizing data like vulnerabilities between users.
 
